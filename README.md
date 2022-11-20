@@ -1,2 +1,2 @@
-# toonworld4all---scraper
+# toonworld4all-scraper
 https://toonworld4all.me
