@@ -24,7 +24,7 @@ def flix(url):
                        inputs = soup.find(id="go-link").find_all(name="input")
                        data = { input.get('name'): input.get('value') for input in inputs }
                        h = { "x-requested-with": "XMLHttpRequest" }
-                       time.sleep(10)
+                       time.sleep(5)
                        r = client.post(f"{DOMAIN}/links/go", data=data, headers=h)
                        return r.json()['url']
                        if "gdtot" in g:
