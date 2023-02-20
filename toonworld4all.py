@@ -14,7 +14,7 @@ def flix(url):
                        download = get(c, stream=True, allow_redirects=False)
                        v = download.headers["location"]
                        client = cloudscraper.create_scraper(allow_brotli=False)
-                       DOMAIN = "https://rl.techysuccess.com"
+                       DOMAIN = "https://share.techymedies.com"
                        code = v.split("/")[-1]
                        final_url = f"{DOMAIN}/{code}"
                        ref = "https://disheye.com/"
