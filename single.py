@@ -8,7 +8,7 @@ def flix(url):
       client = requests.session()
       download = get(url, stream=True, allow_redirects=False)
       v = download.headers["location"]
-      DOMAIN = "https://rl.techysuccess.com"
+      DOMAIN = "https://share.techymedies.com"
       code = v.split("/")[-1]
       final_url = f"{DOMAIN}/{code}"
       ref = "https://disheye.com/"
